@@ -1,0 +1,206 @@
+.logo {
+height: 60px;
+display: flex;
+position: absolute;
+top: 34px;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f2f2f2;
+  text-align: center;
+  background-image: url('img/DJI_0225.JPG');      
+  background-position: center; 
+  height: 100vh;               
+  margin: 0;
+}
+
+
+h1 {
+  color: #D80621 ;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 218PX;
+  margin-bottom: 82px;
+}
+
+.thumbnail {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.4s; 
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Abstand zwischen Pfeil, Bild und Pfeil */
+  justify-content: center;
+}
+
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  display: flex;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.lightbox-left {
+  margin-right: 20px;
+}
+
+.lightbox-right {
+  margin-left: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* --- Navbar --- */
+.nav {
+   display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+/* shop */
+
+
+.menu a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #D80621 ;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: #f6f6f6;
+}
+
+
+
+.Bild {
+
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+}
+.cart-icon span {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 22px;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+}
+
+.cart {
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #D80621;
+}
+
+/* Produktkarten */
+.shop-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.product-card {
+  width: 220px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.video-section{
+  color: #D80621;
+  font-size: 30px;  
+
+
+}

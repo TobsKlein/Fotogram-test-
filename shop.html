@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fotobuch Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <a href="index.html">
+      <img class="logo" src="img/bärenkopf2.png" alt="Logo" />
+    </a>
+  </div>
+
+ 
+
+  <div class="cart-icon" onclick="toggleCart()">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cart-count">0</span>
+  </div>
+</header>
+<h1 style="text-align: center;">🛍️ Willkommen im Shop</h1>
+ <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+<main>
+  
+  <div class="shop-container">
+    
+
+    <div class="product-card">
+      <img class="Bild" src="img/DJI_0221.JPG" alt="Fotodruck A4" />
+      <h3>Der raue Pacific 30x40</h3>
+       <h5>Limitierte Auflage</h5>
+       <h5>Fotodruck auf hochwertigem Papier</h5>
+       <h5>Inklusive Versand</h5>
+       <h5>Nur 50 Stück verfügbar</h5>
+       <h5>Signiert vom Fotografen</h5> 
+       <h5>Perfekt für dein Zuhause oder als Geschenk</h5>
+       <h5>Bestelle jetzt und sichere dir dein Exemplar!</h5>
+       <p>12,99 €</p>
+      <button class="add-to-cart" data-name="Fotodruck A4" data-price="12.99">In den Warenkorb</button>
+    </div>
+
+    <div class="product-card">
+      <img class="Bild" src="img/DJI_0208.JPG" alt="Leinwand 30x40" />
+      <h3>Leinwand 30x40</h3>
+       <h5>Limitierte Auflage</h5>
+       <h5>Fotodruck auf hochwertigem Papier</h5>
+       <h5>Inklusive Versand</h5>
+       <h5>Nur 50 Stück verfügbar</h5>
+       <h5>Signiert vom Fotografen</h5> 
+       <h5>Perfekt für dein Zuhause oder als Geschenk</h5>
+       <h5>Bestelle jetzt und sichere dir dein Exemplar!</h5> 
+      <p>19,99 €</p>
+      <button class="add-to-cart" data-name="Leinwand 30x40" data-price="29.99">In den Warenkorb</button>
+    </div>
+    <div class="product-card">
+      <img class="Bild" src="img/DJI_0210.JPG" alt="Leinwand 50x40" />
+      <h3>Leinwand 50x40</h3>
+      <h5>Limitierte Auflage</h5>
+       <h5>Fotodruck auf hochwertigem Papier</h5>
+       <h5>Inklusive Versand</h5>
+       <h5>Nur 50 Stück verfügbar</h5>
+       <h5>Signiert vom Fotografen</h5> 
+       <h5>Perfekt für dein Zuhause oder als Geschenk</h5>
+       <h5>Bestelle jetzt und sichere dir dein Exemplar!</h5>
+      <p>29,99 €</p>
+      <button class="add-to-cart" data-name="Leinwand 50x40" data-price="29.99">In den Warenkorb</button>
+    </div>
+  </div>
+</main>
+
+
+  <div class="cart" id="cart" style="display: none;">
+    <h3>🛒 Warenkorb</h3>
+    <ul id="cart-items"></ul>
+    <p><strong>Gesamt: <span id="total">0.00</span> €</strong></p>
+    <button id="clear-cart">Warenkorb leeren</button>
+  </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+
