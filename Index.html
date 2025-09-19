@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fotobuch Kanada</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header mit Logo und Navigation -->
+  <header>
+    <img class="logo" src="img/bärenkopf2.png" alt="Logo" />
+    <h1>FOTOGRAM B.C</h1>
+
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Galerie -->
+  <div class="gallery" id="gallery">
+    <!-- Bilder werden per JavaScript eingefügt -->
+  </div>
+
+  <!-- Video darf maximal 35sek sein -->
+  <section class="video-section">
+    <h1>Wasserdurchfahrt</h1>
+    <video controls width="600">
+      <source src="video/VID_20241007_201412_00_056.mp4" type="video/mp4" />
+      Dein Browser unterstützt das Video-Tag nicht.
+    </video>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" style="display: none;">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <div class="lightbox-content">
+      <button class="arrow lightbox-left">&#10094;</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="Vorschau" />
+      <button class="arrow lightbox-right">&#10095;</button>
+    </div>
+  </div>
+
+  <!--  Warenkorb -->
+  <!-- <div id="cart" style="display: none;">
+    <h2>Warenkorb</h2>
+    <ul id="cart-items"></ul>
+    <div>Gesamt: <span id="total">0.00</span> €</div>
+    <div>Artikel im Warenkorb: <span id="cart-count">0</span></div>
+    <button id="clear-cart">Warenkorb leeren</button>
+    <button onclick="toggleCart()">Warenkorb schließen</button>
+  </div>
+
+  <!-- Button zum Ein-/Ausblenden des Warenkorbs 
+  <button onclick="toggleCart()">Warenkorb anzeigen</button>  -->
+
+  <script src="script.js"></script>
+
+  <footer>
+    <p>&copy; 2025 Fotogram B.C – Alle Rechte vorbehalten</p>
+  </footer>
+</body>
+</html>
